@@ -9,7 +9,7 @@
 > 7 tipos de dado pessoal brasileiro, troca cada um por um marcador antes de o texto ir para o
 > provedor de IA e desfaz a troca na resposta. O provedor nunca vê o dado real.
 
-**Benchmark ao vivo:** [arthurpenedo.github.io/lgpd-guard](https://arthurpenedo.github.io/lgpd-guard/)
+**Benchmark ao vivo:** [arthurpenedo.github.io/lgpd-guard](https://arthurpenedo.github.io/lgpd-guard/) · **Proxy com um LLM de verdade:** [demo ↗](https://arthurpenedo.github.io/lgpd-guard/demo.html)
 
 ![Benchmark do lgpd-guard](docs/benchmark.png)
 
@@ -100,6 +100,34 @@ Cada tipo tem o nível de evidência que o formato permite:
 - Na volta, marcadores que o LLM **inventou** (que não estão no cofre) ficam como estão, sem quebrar a resposta.
 - Há também uma **máscara irreversível** para logs: `CPF [CPF ***25]`.
 
+## Proxy: a aplicação só troca a URL
+
+```bash
+pip install -e ".[ner,proxy]"
+lgpd-guard proxy --upstream https://api.openai.com/v1      # ou http://localhost:11434/v1 (Ollama)
+```
+
+```python
+from openai import OpenAI
+
+cliente = OpenAI(base_url="http://localhost:8000/v1", api_key="sua-chave-do-provedor")  # única mudança
+cliente.chat.completions.create(model="gpt-4o-mini", messages=[{"role": "user", "content": "Meu CPF é 529.982.247-25"}])
+```
+
+- Implementa `POST /v1/chat/completions` (o formato da OpenAI, que Ollama, vLLM, Groq e outros também falam),
+  inclusive mensagens em partes (texto + imagem).
+- **Um cofre por conversa** (cabeçalho `X-Sessao`, devolvido na primeira resposta): o histórico que a aplicação
+  reenvia é anonimizado com os mesmos marcadores, e o modelo consegue se referir a `<NOME_1>` turnos depois.
+- Quando há marcadores, o proxy acrescenta uma instrução curta pedindo ao modelo para repeti-los exatamente.
+- **Auditoria** em `GET /auditoria`: quantos dados de cada tipo foram protegidos por chamada, **sem os valores**.
+- A chave do provedor é só repassada; o proxy não guarda nada em disco.
+
+**Demonstração no CI:** uma conversa de dois turnos passa pelo proxy até o Qwen 2.5 1.5B (Ollama, no runner do
+GitHub). Um "espião" entre o proxy e o modelo grava exatamente o que o provedor recebeu, e o job **falha se algum
+dado pessoal chegar lá**. No segundo turno, o modelo lembra do `<NOME_1>` do primeiro, e o cliente recebe o nome real.
+
+![Demonstração do proxy](docs/demo-proxy.png)
+
 ## Decisões técnicas
 
 - **Validar antes de confiar no padrão.** Um regex de CPF casa com qualquer número de 11 dígitos; o dígito
@@ -126,7 +154,7 @@ Cada tipo tem o nível de evidência que o formato permite:
 ```bash
 git clone https://github.com/arthurpenedo/lgpd-guard && cd lgpd-guard
 pip install -e ".[dev]"
-pytest -q                                                    # 24 testes, sem precisar do spaCy
+pytest -q                                                    # 30 testes, sem precisar do spaCy
 
 lgpd-guard anonimizar "Meu CPF é 529.982.247-25" --sem-ner   # -> Meu CPF é <CPF_1>
 lgpd-guard anonimizar "Meu CPF é 529.982.247-25" --mascarar  # -> Meu CPF é [CPF ***25]
@@ -152,7 +180,8 @@ print(p.restaurar(resposta_do_llm, cofre))
 - [x] 13 tipos de dado, validadores, contexto, NER com filtro gramatical
 - [x] Pseudonimização reversível com cofre por sessão e máscara para logs
 - [x] Benchmark contra o Presidio em dois conjuntos (desenvolvimento e desafio), publicado no Pages
-- [ ] **Proxy compatível com a API da OpenAI:** a aplicação troca só a URL e passa a ter o filtro
+- [x] **Proxy compatível com a API da OpenAI**, com demonstração ponta a ponta contra um modelo aberto no CI
+- [ ] Streaming (`stream=true`) no proxy
 - [ ] **NER próprio treinado** (BERTimbau, no Colab) para nomes em minúsculas e transcrições
 - [ ] Usar como defesa no [redteam-br](https://github.com/arthurpenedo/redteam-br) e no `agente-banco`
 

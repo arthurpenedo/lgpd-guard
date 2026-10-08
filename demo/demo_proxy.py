@@ -123,7 +123,7 @@ def pagina(resumo: dict) -> str:
 <div class="c prov"><div class="r">2 · o provedor de IA recebeu</div><pre>{_marcar(t['provedor_recebeu'])}</pre></div>
 <div class="c prov"><div class="r">3 · o modelo respondeu</div><pre>{_marcar(t['provedor_respondeu'])}</pre></div>
 <div class="c"><div class="r">4 · o cliente recebeu</div><pre>{html.escape(t['cliente_recebeu'])}</pre></div>
-</div><p class="sub">{t['protegidos']} dados pessoais protegidos neste turno.</p>"""
+</div><p class="sub">{t['protegidos']} dados pessoais protegidos nesta chamada (inclui o histórico da conversa, que é reenviado a cada turno).</p>"""
                       for i, t in enumerate(resumo["turnos"], 1))
     ok = not resumo["dados_que_chegaram_ao_provedor"]
     selo = ("<p class='ok'>✔ Nenhum dado pessoal chegou ao provedor.</p>" if ok else
