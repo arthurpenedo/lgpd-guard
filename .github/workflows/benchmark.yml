@@ -1,7 +1,8 @@
 name: Benchmark
 
 # Roda o lgpd-guard (só regras e regras + NER do spaCy) e o Presidio da Microsoft nos dois
-# conjuntos rotulados e publica o relatório no GitHub Pages.
+# conjuntos rotulados, depois passa uma conversa real pelo proxy até um modelo aberto (Ollama)
+# e publica o relatório e a demonstração no GitHub Pages.
 on:
   push:
     branches: [main]
@@ -24,12 +25,25 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -e ".[ner,benchmark,dev]"
+      - run: pip install -e ".[ner,benchmark,proxy,dev]"
       - run: python -m spacy download pt_core_news_sm
       - name: Benchmark
         run: |
           mkdir -p site
           lgpd-guard benchmark --json site/resultados.json --html site/index.html
+      - name: Instalar o Ollama
+        run: curl -fsSL https://ollama.com/install.sh | sh
+      - uses: actions/cache@v4
+        with:
+          path: ~/.ollama/models
+          key: ollama-qwen2.5:1.5b
+      - name: Subir o Ollama e baixar o modelo
+        run: |
+          OLLAMA_MODELS=$HOME/.ollama/models nohup ollama serve > ollama.log 2>&1 &
+          for i in $(seq 1 30); do curl -sf localhost:11434/api/tags >/dev/null && break; sleep 2; done
+          OLLAMA_MODELS=$HOME/.ollama/models ollama pull qwen2.5:1.5b
+      - name: Demonstração do proxy com o modelo de verdade
+        run: python demo/demo_proxy.py --modelo qwen2.5:1.5b --saida site/demo.html
       - uses: actions/upload-artifact@v4
         with:
           name: benchmark

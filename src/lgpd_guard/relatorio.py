@@ -79,7 +79,8 @@ def gerar(resultados: dict[str, dict[str, dict]], exemplo: tuple[str, str] | Non
 <style>{_CSS}</style></head><body><main>
 <h1>lgpd-guard · benchmark de detecção de dados pessoais</h1>
 <p class="sub">F1 por tipo de dado, em conjuntos 100% sintéticos de mensagens de atendimento bancário · gerado em
-{date.today():%d/%m/%Y}. Valores em vermelho: o sistema não detecta aquele tipo.</p>
+{date.today():%d/%m/%Y}. Valores em vermelho: o sistema não detecta aquele tipo.
+<a href="demo.html">Veja o proxy funcionando com um LLM de verdade →</a></p>
 {bloco_exemplo}
 {''.join(secoes)}
 <h2>Como ler</h2>

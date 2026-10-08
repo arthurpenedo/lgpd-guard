@@ -16,7 +16,7 @@ dependencies = []
 ner = ["spacy>=3.7"]
 benchmark = ["faker>=25", "presidio-analyzer>=2.2"]
 proxy = ["fastapi>=0.110", "uvicorn>=0.29", "httpx>=0.27"]
-dev = ["pytest>=8", "faker>=25"]
+dev = ["pytest>=8", "faker>=25", "fastapi>=0.110", "httpx>=0.27"]
 
 [project.scripts]
 lgpd-guard = "lgpd_guard.cli:main"

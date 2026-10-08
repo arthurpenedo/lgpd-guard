@@ -67,6 +67,17 @@ def _benchmark(args: argparse.Namespace) -> int:
     return 0
 
 
+def _proxy(args: argparse.Namespace) -> int:
+    import uvicorn
+
+    from .proxy import criar_app
+
+    app = criar_app(upstream=args.upstream, usar_ner=not args.sem_ner)
+    print(f"lgpd-guard proxy em http://{args.host}:{args.porta}/v1  ->  {args.upstream}")
+    uvicorn.run(app, host=args.host, port=args.porta, log_level="warning")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="lgpd-guard", description="Dados pessoais brasileiros fora do LLM.")
     parser.add_argument("--version", action="version", version=f"lgpd-guard {__version__}")
@@ -86,6 +97,13 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--html")
     p.add_argument("--sem-presidio", action="store_true")
     p.set_defaults(func=_benchmark)
+
+    p = sub.add_parser("proxy", help="sobe o proxy compatível com a API de chat da OpenAI")
+    p.add_argument("--upstream", default="http://localhost:11434/v1", help="URL base do provedor de LLM")
+    p.add_argument("--host", default="127.0.0.1")
+    p.add_argument("--porta", type=int, default=8000)
+    p.add_argument("--sem-ner", action="store_true")
+    p.set_defaults(func=_proxy)
 
     args = parser.parse_args(argv)
     return args.func(args)
