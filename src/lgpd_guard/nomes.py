@@ -43,12 +43,27 @@ def _eh_pessoa_plausivel(texto: str) -> bool:
     return any(c.isalpha() for c in limpo) and not any(c.isdigit() for c in limpo)
 
 
+_SUFIXO_EMPRESA = re.compile(r"^\s*(?:S\.?A\.?|Ltda\.?|LTDA|EIRELI|ME\b|EPP\b|& Cia|e Filhos|Comércio|Comercio)")
+
+
+def _passa_filtro_gramatical(ent) -> bool:  # ent: spacy.tokens.Span
+    """O NER pequeno do spaCy marca como pessoa o verbo que abre a frase ("Quero", "Comprei")
+    e sobrenomes que fazem parte de razão social ("Fonseca de Costa S.A."). A classe
+    gramatical calculada pelo próprio modelo resolve isso sem lista de palavras."""
+    if any(t.pos_ in ("VERB", "AUX") for t in ent):
+        return False
+    if len(ent) == 1 and ent[0].pos_ != "PROPN":
+        return False
+    return not _SUFIXO_EMPRESA.match(ent.doc.text[ent.end_char:ent.end_char + 15])
+
+
 @lru_cache(maxsize=1)
 def _carregar_spacy():
     try:
         import spacy
 
-        return spacy.load("pt_core_news_sm", disable=["lemmatizer", "morphologizer", "parser"])
+        # o morphologizer fica ligado: a classe gramatical é usada para filtrar falsos nomes
+        return spacy.load("pt_core_news_sm", disable=["lemmatizer", "parser"])
     except Exception:  # spaCy ou o modelo ausentes: segue só com as regras
         return None
 
@@ -67,7 +82,7 @@ def reconhecer_nomes(texto: str, usar_ner: bool = True) -> list[Entidade]:
     nlp = _carregar_spacy() if usar_ner else None
     if nlp is not None:
         for ent in nlp(texto).ents:
-            if ent.label_ == "PER" and _eh_pessoa_plausivel(ent.text):
+            if ent.label_ == "PER" and _eh_pessoa_plausivel(ent.text) and _passa_filtro_gramatical(ent):
                 # o NER às vezes inclui pontuação ou artigo nas bordas
                 bruto = texto[ent.start_char:ent.end_char]
                 inicio = ent.start_char + (len(bruto) - len(bruto.lstrip(" .,;:")))
