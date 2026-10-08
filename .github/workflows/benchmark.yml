@@ -1,0 +1,51 @@
+name: Benchmark
+
+# Roda o lgpd-guard (só regras e regras + NER do spaCy) e o Presidio da Microsoft nos dois
+# conjuntos rotulados e publica o relatório no GitHub Pages.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: benchmark-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[ner,benchmark,dev]"
+      - run: python -m spacy download pt_core_news_sm
+      - name: Benchmark
+        run: |
+          mkdir -p site
+          lgpd-guard benchmark --json site/resultados.json --html site/index.html
+      - uses: actions/upload-artifact@v4
+        with:
+          name: benchmark
+          path: site
+      - if: github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  publicar:
+    if: github.ref == 'refs/heads/main'
+    needs: benchmark
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

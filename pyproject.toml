@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lgpd-guard"
+version = "0.1.0"
+description = "Detecta e pseudonimiza dados pessoais brasileiros (CPF, CNPJ, cartão, nomes...) antes de mandar texto para um LLM"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Arthur Penedo" }]
+dependencies = []
+
+[project.optional-dependencies]
+ner = ["spacy>=3.7"]
+benchmark = ["faker>=25", "presidio-analyzer>=2.2"]
+proxy = ["fastapi>=0.110", "uvicorn>=0.29", "httpx>=0.27"]
+dev = ["pytest>=8", "faker>=25"]
+
+[project.scripts]
+lgpd-guard = "lgpd_guard.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

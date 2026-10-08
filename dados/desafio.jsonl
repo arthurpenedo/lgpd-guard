@@ -1,0 +1,160 @@
+{"id": "d000", "texto": "oii tudo bem? to sem acesso ao app, meu cpf 378.246.590-38 pode ver pra mim? obg, Maitê Rios", "entidades": [[44, 58, "CPF"], [82, 92, "NOME"]]}
+{"id": "d001", "texto": "Ágatha Gomes aqui. Troquei de número, o novo é (019) 95420-6507, favor atualizar.", "entidades": [[0, 12, "NOME"], [47, 63, "TELEFONE"]]}
+{"id": "d002", "texto": "Segue CPF 941 056 283 05 e email ALICIA94@EXAMPLE.ORG para envio do informe de rendimentos.", "entidades": [[10, 24, "CPF"], [33, 53, "EMAIL"]]}
+{"id": "d003", "texto": "Ontem falei com Giovanna das Neves na agência e ele disse que o estorno de R$ 7.312,85 sai em 5 dias úteis. Já passou!", "entidades": [[16, 34, "NOME"]]}
+{"id": "d004", "texto": "Mudei para R. de Leão, 305 (CEP 88471872), mandem o cartão novo para lá.", "entidades": [[11, 26, "ENDERECO"], [32, 40, "CEP"]]}
+{"id": "d005", "texto": "Dados para contestação:\n- cartão: 4743-9616-2718-6858\n- valor: R$ 8.976,49\n- data: 07/10/2026", "entidades": [[34, 53, "CARTAO"]]}
+{"id": "d006", "texto": "A conta conjunta é minha e da Marcos Vinicius Brito. Quero incluir o Davi Novaes como dependente.", "entidades": [[30, 51, "NOME"], [69, 80, "NOME"]]}
+{"id": "d007", "texto": "Mandei o Pix pra chave abreumaria-julia@example.net mas era pra ser na 13f6a1e7-b124-3c1b-1d3f-578cede15ff1. Dá pra estornar?", "entidades": [[23, 51, "EMAIL"], [71, 107, "PIX_ALEATORIA"]]}
+{"id": "d008", "texto": "Sou MEI, CNPJ 49015736000122, e quero saber se posso usar a maquininha de vocês no meu comércio em Rezende.", "entidades": [[14, 28, "CNPJ"]]}
+{"id": "d009", "texto": "Faço aniversário dia 19/11/1985 e queria saber se tem algum benefício no cartão.", "entidades": [[21, 31, "DATA_NASCIMENTO"]]}
+{"id": "d010", "texto": "A fatura de R$ 5.468,13 com vencimento 26/10/2026 veio com código de barras 34191.79001 01043.510047 91020.150008 1 4918946989. Está certo?", "entidades": []}
+{"id": "d011", "texto": "Quanto rende R$ 9.460,43 no CDB de 110% do CDI por 12 meses? Vi no site do Itaú.", "entidades": []}
+{"id": "d012", "texto": "oii tudo bem? to sem acesso ao app, meu cpf 698.324.570-92 pode ver pra mim? obg, Ana Júlia Freitas", "entidades": [[44, 58, "CPF"], [82, 99, "NOME"]]}
+{"id": "d013", "texto": "Thomas Sampaio aqui. Troquei de número, o novo é (031) 96115-9210, favor atualizar.", "entidades": [[0, 14, "NOME"], [49, 65, "TELEFONE"]]}
+{"id": "d014", "texto": "Segue CPF 624 593 701 99 e email HFOGACA@EXAMPLE.NET para envio do informe de rendimentos.", "entidades": [[10, 24, "CPF"], [33, 52, "EMAIL"]]}
+{"id": "d015", "texto": "Ontem falei com Maria Liz Castro na agência e ele disse que o estorno de R$ 9.623,04 sai em 5 dias úteis. Já passou!", "entidades": [[16, 32, "NOME"]]}
+{"id": "d016", "texto": "Mudei para R. Barros, 54 (CEP 28979-217), mandem o cartão novo para lá.", "entidades": [[11, 24, "ENDERECO"], [30, 39, "CEP"]]}
+{"id": "d017", "texto": "Dados para contestação:\n- cartão: 4516-9392-1947-9688\n- valor: R$ 5.713,78\n- data: 13/11/2026", "entidades": [[34, 53, "CARTAO"]]}
+{"id": "d018", "texto": "A conta conjunta é minha e da Ana Cecília Albuquerque. Quero incluir o Luiz Fernando Casa Grande como dependente.", "entidades": [[30, 53, "NOME"], [71, 96, "NOME"]]}
+{"id": "d019", "texto": "Mandei o Pix pra chave lizmonteiro@example.net mas era pra ser na 4660ac57-a96e-030a-8be1-6eab8beeb02e. Dá pra estornar?", "entidades": [[23, 46, "EMAIL"], [66, 102, "PIX_ALEATORIA"]]}
+{"id": "d020", "texto": "Sou MEI, CNPJ 54069381000194, e quero saber se posso usar a maquininha de vocês no meu comércio em Farias.", "entidades": [[14, 28, "CNPJ"]]}
+{"id": "d021", "texto": "Faço aniversário dia 04/11/1944 e queria saber se tem algum benefício no cartão.", "entidades": [[21, 31, "DATA_NASCIMENTO"]]}
+{"id": "d022", "texto": "A fatura de R$ 8.139,12 com vencimento 09/11/2026 veio com código de barras 34191.79001 01043.510047 91020.150008 1 7649995398. Está certo?", "entidades": []}
+{"id": "d023", "texto": "Quanto rende R$ 2.763,01 no CDB de 110% do CDI por 12 meses? Vi no site do Bradesco.", "entidades": []}
+{"id": "d024", "texto": "oii tudo bem? to sem acesso ao app, meu cpf 480.197.523-23 pode ver pra mim? obg, Mariane das Neves", "entidades": [[44, 58, "CPF"], [82, 99, "NOME"]]}
+{"id": "d025", "texto": "João Miguel Monteiro aqui. Troquei de número, o novo é (081) 97171-3916, favor atualizar.", "entidades": [[0, 20, "NOME"], [55, 71, "TELEFONE"]]}
+{"id": "d026", "texto": "Segue CPF 085 136 729 12 e email DA-MATAGIOVANNA@EXAMPLE.NET para envio do informe de rendimentos.", "entidades": [[10, 24, "CPF"], [33, 60, "EMAIL"]]}
+{"id": "d027", "texto": "Ontem falei com Renan Gomes na agência e ele disse que o estorno de R$ 8.795,50 sai em 5 dias úteis. Já passou!", "entidades": [[16, 27, "NOME"]]}
+{"id": "d028", "texto": "Mudei para R. Pedro Casa Grande, 1 (CEP 82768617), mandem o cartão novo para lá.", "entidades": [[11, 34, "ENDERECO"], [40, 48, "CEP"]]}
+{"id": "d029", "texto": "Dados para contestação:\n- cartão: 4504-3867-7867-0899\n- valor: R$ 9.198,40\n- data: 23/09/2026", "entidades": [[34, 53, "CARTAO"]]}
+{"id": "d030", "texto": "A conta conjunta é minha e da Yago da Paz. Quero incluir o Maria Júlia Fernandes como dependente.", "entidades": [[30, 41, "NOME"], [59, 80, "NOME"]]}
+{"id": "d031", "texto": "Mandei o Pix pra chave beatriz22@example.org mas era pra ser na 2c31775a-fdd6-1a04-1835-89e9fc81e999. Dá pra estornar?", "entidades": [[23, 44, "EMAIL"], [64, 100, "PIX_ALEATORIA"]]}
+{"id": "d032", "texto": "Sou MEI, CNPJ 59816347000150, e quero saber se posso usar a maquininha de vocês no meu comércio em Campos do Amparo.", "entidades": [[14, 28, "CNPJ"]]}
+{"id": "d033", "texto": "Faço aniversário dia 25/09/2007 e queria saber se tem algum benefício no cartão.", "entidades": [[21, 31, "DATA_NASCIMENTO"]]}
+{"id": "d034", "texto": "A fatura de R$ 2.039,70 com vencimento 13/09/2026 veio com código de barras 34191.79001 01043.510047 91020.150008 1 1145287273. Está certo?", "entidades": []}
+{"id": "d035", "texto": "Quanto rende R$ 7.731,75 no CDB de 110% do CDI por 12 meses? Vi no site do Itaú.", "entidades": []}
+{"id": "d036", "texto": "oii tudo bem? to sem acesso ao app, meu cpf 987.123.456-28 pode ver pra mim? obg, Thomas Martins", "entidades": [[44, 58, "CPF"], [82, 96, "NOME"]]}
+{"id": "d037", "texto": "Diego Rodrigues aqui. Troquei de número, o novo é (071) 92965-9150, favor atualizar.", "entidades": [[0, 15, "NOME"], [50, 66, "TELEFONE"]]}
+{"id": "d038", "texto": "Segue CPF 723 104 869 22 e email DA-MOTAGUSTAVO-HENRIQUE@EXAMPLE.NET para envio do informe de rendimentos.", "entidades": [[10, 24, "CPF"], [33, 68, "EMAIL"]]}
+{"id": "d039", "texto": "Ontem falei com Guilherme Borges na agência e ele disse que o estorno de R$ 8.165,51 sai em 5 dias úteis. Já passou!", "entidades": [[16, 32, "NOME"]]}
+{"id": "d040", "texto": "Mudei para R. Alexandre Almeida, 77 (CEP 04721-247), mandem o cartão novo para lá.", "entidades": [[11, 35, "ENDERECO"], [41, 50, "CEP"]]}
+{"id": "d041", "texto": "Dados para contestação:\n- cartão: 4240-6972-9222-0907\n- valor: R$ 6.929,51\n- data: 19/10/2026", "entidades": [[34, 53, "CARTAO"]]}
+{"id": "d042", "texto": "A conta conjunta é minha e da Marina Nascimento. Quero incluir o Felipe Pastor como dependente.", "entidades": [[30, 47, "NOME"], [65, 78, "NOME"]]}
+{"id": "d043", "texto": "Mandei o Pix pra chave luiz-fernandogomes@example.com mas era pra ser na a0c21aa2-a3f8-2949-ad99-260e96e78e42. Dá pra estornar?", "entidades": [[23, 53, "EMAIL"], [73, 109, "PIX_ALEATORIA"]]}
+{"id": "d044", "texto": "Sou MEI, CNPJ 15046283000180, e quero saber se posso usar a maquininha de vocês no meu comércio em Ramos.", "entidades": [[14, 28, "CNPJ"]]}
+{"id": "d045", "texto": "Faço aniversário dia 01/08/1982 e queria saber se tem algum benefício no cartão.", "entidades": [[21, 31, "DATA_NASCIMENTO"]]}
+{"id": "d046", "texto": "A fatura de R$ 9.014,45 com vencimento 29/10/2026 veio com código de barras 34191.79001 01043.510047 91020.150008 1 9815903143. Está certo?", "entidades": []}
+{"id": "d047", "texto": "Quanto rende R$ 884,47 no CDB de 110% do CDI por 12 meses? Vi no site do Itaú.", "entidades": []}
+{"id": "d048", "texto": "oii tudo bem? to sem acesso ao app, meu cpf 25137084662 pode ver pra mim? obg, Ana Júlia Cunha", "entidades": [[44, 55, "CPF"], [79, 94, "NOME"]]}
+{"id": "d049", "texto": "Stella Borges aqui. Troquei de número, o novo é (085) 95709-9030, favor atualizar.", "entidades": [[0, 13, "NOME"], [48, 64, "TELEFONE"]]}
+{"id": "d050", "texto": "Segue CPF 108 354 297 41 e email CARVALHODAVI-LUCCA@EXAMPLE.NET para envio do informe de rendimentos.", "entidades": [[10, 24, "CPF"], [33, 63, "EMAIL"]]}
+{"id": "d051", "texto": "Ontem falei com Marcos Vinicius da Mata na agência e ele disse que o estorno de R$ 218,35 sai em 5 dias úteis. Já passou!", "entidades": [[16, 39, "NOME"]]}
+{"id": "d052", "texto": "Mudei para R. Moreira, 484 (CEP 85349652), mandem o cartão novo para lá.", "entidades": [[11, 26, "ENDERECO"], [32, 40, "CEP"]]}
+{"id": "d053", "texto": "Dados para contestação:\n- cartão: 4546-9395-8790-2208\n- valor: R$ 8.020,45\n- data: 02/10/2026", "entidades": [[34, 53, "CARTAO"]]}
+{"id": "d054", "texto": "A conta conjunta é minha e da Julia Fonseca. Quero incluir o Bella Albuquerque como dependente.", "entidades": [[30, 43, "NOME"], [61, 78, "NOME"]]}
+{"id": "d055", "texto": "Mandei o Pix pra chave apollo35@example.net mas era pra ser na ebc88f45-14ac-ce32-531c-65aa2352ec64. Dá pra estornar?", "entidades": [[23, 43, "EMAIL"], [63, 99, "PIX_ALEATORIA"]]}
+{"id": "d056", "texto": "Sou MEI, CNPJ 36518029000107, e quero saber se posso usar a maquininha de vocês no meu comércio em Peixoto.", "entidades": [[14, 28, "CNPJ"]]}
+{"id": "d057", "texto": "Faço aniversário dia 18/12/2002 e queria saber se tem algum benefício no cartão.", "entidades": [[21, 31, "DATA_NASCIMENTO"]]}
+{"id": "d058", "texto": "A fatura de R$ 4.652,34 com vencimento 06/11/2026 veio com código de barras 34191.79001 01043.510047 91020.150008 1 6588894726. Está certo?", "entidades": []}
+{"id": "d059", "texto": "Quanto rende R$ 2.575,71 no CDB de 110% do CDI por 12 meses? Vi no site do Santander.", "entidades": []}
+{"id": "d060", "texto": "oii tudo bem? to sem acesso ao app, meu cpf 407.165.283-71 pode ver pra mim? obg, Juliana Teixeira", "entidades": [[44, 58, "CPF"], [82, 98, "NOME"]]}
+{"id": "d061", "texto": "Jade Cirino aqui. Troquei de número, o novo é (061) 98561-2172, favor atualizar.", "entidades": [[0, 11, "NOME"], [46, 62, "TELEFONE"]]}
+{"id": "d062", "texto": "Segue CPF 718 246 905 76 e email JOAO-PEDROGARCIA@EXAMPLE.NET para envio do informe de rendimentos.", "entidades": [[10, 24, "CPF"], [33, 61, "EMAIL"]]}
+{"id": "d063", "texto": "Ontem falei com Antônio Farias na agência e ele disse que o estorno de R$ 6.343,85 sai em 5 dias úteis. Já passou!", "entidades": [[16, 30, "NOME"]]}
+{"id": "d064", "texto": "Mudei para R. Sofia Garcia, 14 (CEP 80509262), mandem o cartão novo para lá.", "entidades": [[11, 30, "ENDERECO"], [36, 44, "CEP"]]}
+{"id": "d065", "texto": "Dados para contestação:\n- cartão: 4706-9946-7056-1169\n- valor: R$ 9.872,95\n- data: 24/11/2026", "entidades": [[34, 53, "CARTAO"]]}
+{"id": "d066", "texto": "A conta conjunta é minha e da Heloisa Fogaça. Quero incluir o Antonella Mendonça como dependente.", "entidades": [[30, 44, "NOME"], [62, 80, "NOME"]]}
+{"id": "d067", "texto": "Mandei o Pix pra chave eduardaleao@example.com mas era pra ser na 9a49e13d-1b0c-b0ed-de07-9eaea48e8c66. Dá pra estornar?", "entidades": [[23, 46, "EMAIL"], [66, 102, "PIX_ALEATORIA"]]}
+{"id": "d068", "texto": "Sou MEI, CNPJ 51730982000108, e quero saber se posso usar a maquininha de vocês no meu comércio em da Cruz das Flores.", "entidades": [[14, 28, "CNPJ"]]}
+{"id": "d069", "texto": "Faço aniversário dia 02/12/1970 e queria saber se tem algum benefício no cartão.", "entidades": [[21, 31, "DATA_NASCIMENTO"]]}
+{"id": "d070", "texto": "A fatura de R$ 4.873,59 com vencimento 18/11/2026 veio com código de barras 34191.79001 01043.510047 91020.150008 1 8682542768. Está certo?", "entidades": []}
+{"id": "d071", "texto": "Quanto rende R$ 686,01 no CDB de 110% do CDI por 12 meses? Vi no site do Caixa.", "entidades": []}
+{"id": "d072", "texto": "oii tudo bem? to sem acesso ao app, meu cpf 52147306835 pode ver pra mim? obg, Maysa Gonçalves", "entidades": [[44, 55, "CPF"], [79, 94, "NOME"]]}
+{"id": "d073", "texto": "Luiz Fernando Marques aqui. Troquei de número, o novo é (062) 98014-9140, favor atualizar.", "entidades": [[0, 21, "NOME"], [56, 72, "TELEFONE"]]}
+{"id": "d074", "texto": "Segue CPF 573 490 126 16 e email LUISA13@EXAMPLE.ORG para envio do informe de rendimentos.", "entidades": [[10, 24, "CPF"], [33, 52, "EMAIL"]]}
+{"id": "d075", "texto": "Ontem falei com Rafaela da Rosa na agência e ele disse que o estorno de R$ 4.469,86 sai em 5 dias úteis. Já passou!", "entidades": [[16, 31, "NOME"]]}
+{"id": "d076", "texto": "Mudei para R. de das Neves, 9 (CEP 36424-065), mandem o cartão novo para lá.", "entidades": [[11, 29, "ENDERECO"], [35, 44, "CEP"]]}
+{"id": "d077", "texto": "Dados para contestação:\n- cartão: 4766-6748-1092-7135\n- valor: R$ 1.011,83\n- data: 16/10/2026", "entidades": [[34, 53, "CARTAO"]]}
+{"id": "d078", "texto": "A conta conjunta é minha e da Igor Cardoso. Quero incluir o Isabelly Ferreira como dependente.", "entidades": [[30, 42, "NOME"], [60, 77, "NOME"]]}
+{"id": "d079", "texto": "Mandei o Pix pra chave juliana14@example.net mas era pra ser na 0f547158-54a9-5add-1063-beb34029e0fc. Dá pra estornar?", "entidades": [[23, 44, "EMAIL"], [64, 100, "PIX_ALEATORIA"]]}
+{"id": "d080", "texto": "Sou MEI, CNPJ 37158296000183, e quero saber se posso usar a maquininha de vocês no meu comércio em Souza.", "entidades": [[14, 28, "CNPJ"]]}
+{"id": "d081", "texto": "Faço aniversário dia 14/11/1954 e queria saber se tem algum benefício no cartão.", "entidades": [[21, 31, "DATA_NASCIMENTO"]]}
+{"id": "d082", "texto": "A fatura de R$ 4.554,87 com vencimento 02/10/2026 veio com código de barras 34191.79001 01043.510047 91020.150008 1 1120988298. Está certo?", "entidades": []}
+{"id": "d083", "texto": "Quanto rende R$ 1.148,11 no CDB de 110% do CDI por 12 meses? Vi no site do Santander.", "entidades": []}
+{"id": "d084", "texto": "oii tudo bem? to sem acesso ao app, meu cpf 593.084.271-04 pode ver pra mim? obg, Caleb Novais", "entidades": [[44, 58, "CPF"], [82, 94, "NOME"]]}
+{"id": "d085", "texto": "Davi Luiz Machado aqui. Troquei de número, o novo é (081) 94150-5619, favor atualizar.", "entidades": [[0, 17, "NOME"], [52, 68, "TELEFONE"]]}
+{"id": "d086", "texto": "Segue CPF 826 593 417 37 e email APARECIDAMIRELLA@EXAMPLE.ORG para envio do informe de rendimentos.", "entidades": [[10, 24, "CPF"], [33, 61, "EMAIL"]]}
+{"id": "d087", "texto": "Ontem falei com Maria Laura Moreira na agência e ele disse que o estorno de R$ 8.975,41 sai em 5 dias úteis. Já passou!", "entidades": [[16, 35, "NOME"]]}
+{"id": "d088", "texto": "Mudei para R. de Pereira, 814 (CEP 23862229), mandem o cartão novo para lá.", "entidades": [[11, 29, "ENDERECO"], [35, 43, "CEP"]]}
+{"id": "d089", "texto": "Dados para contestação:\n- cartão: 4388-8742-9868-3410\n- valor: R$ 3.349,98\n- data: 29/09/2026", "entidades": [[34, 53, "CARTAO"]]}
+{"id": "d090", "texto": "A conta conjunta é minha e da Felipe Peixoto. Quero incluir o Valentim Barbosa como dependente.", "entidades": [[30, 44, "NOME"], [62, 78, "NOME"]]}
+{"id": "d091", "texto": "Mandei o Pix pra chave evelynandrade@example.org mas era pra ser na 62f57a0e-94dc-1188-e61a-856ec4e64c58. Dá pra estornar?", "entidades": [[23, 48, "EMAIL"], [68, 104, "PIX_ALEATORIA"]]}
+{"id": "d092", "texto": "Sou MEI, CNPJ 64159802000121, e quero saber se posso usar a maquininha de vocês no meu comércio em Carvalho de Novais.", "entidades": [[14, 28, "CNPJ"]]}
+{"id": "d093", "texto": "Faço aniversário dia 14/10/1987 e queria saber se tem algum benefício no cartão.", "entidades": [[21, 31, "DATA_NASCIMENTO"]]}
+{"id": "d094", "texto": "A fatura de R$ 3.550,04 com vencimento 07/11/2026 veio com código de barras 34191.79001 01043.510047 91020.150008 1 9048029098. Está certo?", "entidades": []}
+{"id": "d095", "texto": "Quanto rende R$ 6.261,80 no CDB de 110% do CDI por 12 meses? Vi no site do Itaú.", "entidades": []}
+{"id": "d096", "texto": "oii tudo bem? to sem acesso ao app, meu cpf 153.687.092-77 pode ver pra mim? obg, Carlos Eduardo Marques", "entidades": [[44, 58, "CPF"], [82, 104, "NOME"]]}
+{"id": "d097", "texto": "Isabela Aparecida aqui. Troquei de número, o novo é (011) 94533-3317, favor atualizar.", "entidades": [[0, 17, "NOME"], [52, 68, "TELEFONE"]]}
+{"id": "d098", "texto": "Segue CPF 948 206 351 15 e email RVASCONCELOS@EXAMPLE.COM para envio do informe de rendimentos.", "entidades": [[10, 24, "CPF"], [33, 57, "EMAIL"]]}
+{"id": "d099", "texto": "Ontem falei com Davi Lucca da Cruz na agência e ele disse que o estorno de R$ 4.005,81 sai em 5 dias úteis. Já passou!", "entidades": [[16, 34, "NOME"]]}
+{"id": "d100", "texto": "Mudei para R. Sá, 7 (CEP 33869-924), mandem o cartão novo para lá.", "entidades": [[11, 19, "ENDERECO"], [25, 34, "CEP"]]}
+{"id": "d101", "texto": "Dados para contestação:\n- cartão: 4422-5316-9210-3225\n- valor: R$ 8.708,20\n- data: 11/10/2026", "entidades": [[34, 53, "CARTAO"]]}
+{"id": "d102", "texto": "A conta conjunta é minha e da Ana Lívia Novais. Quero incluir o Sarah Gonçalves como dependente.", "entidades": [[30, 46, "NOME"], [64, 79, "NOME"]]}
+{"id": "d103", "texto": "Mandei o Pix pra chave costelagabriela@example.org mas era pra ser na 71a08dd3-116e-b1ec-6511-ac99806d56cc. Dá pra estornar?", "entidades": [[23, 50, "EMAIL"], [70, 106, "PIX_ALEATORIA"]]}
+{"id": "d104", "texto": "Sou MEI, CNPJ 65793104000146, e quero saber se posso usar a maquininha de vocês no meu comércio em Campos.", "entidades": [[14, 28, "CNPJ"]]}
+{"id": "d105", "texto": "Faço aniversário dia 03/10/1984 e queria saber se tem algum benefício no cartão.", "entidades": [[21, 31, "DATA_NASCIMENTO"]]}
+{"id": "d106", "texto": "A fatura de R$ 7.858,44 com vencimento 24/11/2026 veio com código de barras 34191.79001 01043.510047 91020.150008 1 9626363733. Está certo?", "entidades": []}
+{"id": "d107", "texto": "Quanto rende R$ 4.423,25 no CDB de 110% do CDI por 12 meses? Vi no site do Santander.", "entidades": []}
+{"id": "d108", "texto": "oii tudo bem? to sem acesso ao app, meu cpf 935.462.018-33 pode ver pra mim? obg, Joana Farias", "entidades": [[44, 58, "CPF"], [82, 94, "NOME"]]}
+{"id": "d109", "texto": "Lorena Almeida aqui. Troquei de número, o novo é (019) 98471-1753, favor atualizar.", "entidades": [[0, 14, "NOME"], [49, 65, "TELEFONE"]]}
+{"id": "d110", "texto": "Segue CPF 069 213 547 25 e email DAS-NEVESDANTE@EXAMPLE.COM para envio do informe de rendimentos.", "entidades": [[10, 24, "CPF"], [33, 59, "EMAIL"]]}
+{"id": "d111", "texto": "Ontem falei com Breno Viana na agência e ele disse que o estorno de R$ 4.486,36 sai em 5 dias úteis. Já passou!", "entidades": [[16, 27, "NOME"]]}
+{"id": "d112", "texto": "Mudei para R. Cirino, 35 (CEP 16125458), mandem o cartão novo para lá.", "entidades": [[11, 24, "ENDERECO"], [30, 38, "CEP"]]}
+{"id": "d113", "texto": "Dados para contestação:\n- cartão: 4608-7632-1069-2522\n- valor: R$ 6.464,43\n- data: 03/11/2026", "entidades": [[34, 53, "CARTAO"]]}
+{"id": "d114", "texto": "A conta conjunta é minha e da Marcela Peixoto. Quero incluir o Ayla Peixoto como dependente.", "entidades": [[30, 45, "NOME"], [63, 75, "NOME"]]}
+{"id": "d115", "texto": "Mandei o Pix pra chave marianecosta@example.net mas era pra ser na 1073b280-cb85-0d0e-2c76-aeb8293d857d. Dá pra estornar?", "entidades": [[23, 47, "EMAIL"], [67, 103, "PIX_ALEATORIA"]]}
+{"id": "d116", "texto": "Sou MEI, CNPJ 93270415000166, e quero saber se posso usar a maquininha de vocês no meu comércio em Nogueira da Praia.", "entidades": [[14, 28, "CNPJ"]]}
+{"id": "d117", "texto": "Faço aniversário dia 02/10/1984 e queria saber se tem algum benefício no cartão.", "entidades": [[21, 31, "DATA_NASCIMENTO"]]}
+{"id": "d118", "texto": "A fatura de R$ 5.335,73 com vencimento 18/10/2026 veio com código de barras 34191.79001 01043.510047 91020.150008 1 8922634926. Está certo?", "entidades": []}
+{"id": "d119", "texto": "Quanto rende R$ 6.107,16 no CDB de 110% do CDI por 12 meses? Vi no site do Caixa.", "entidades": []}
+{"id": "d120", "texto": "oii tudo bem? to sem acesso ao app, meu cpf 983.165.407-20 pode ver pra mim? obg, Vitor Gabriel Costa", "entidades": [[44, 58, "CPF"], [82, 101, "NOME"]]}
+{"id": "d121", "texto": "Théo Montenegro aqui. Troquei de número, o novo é (011) 92947-9078, favor atualizar.", "entidades": [[0, 15, "NOME"], [50, 66, "TELEFONE"]]}
+{"id": "d122", "texto": "Segue CPF 478 630 951 66 e email FRANCISCOSA@EXAMPLE.ORG para envio do informe de rendimentos.", "entidades": [[10, 24, "CPF"], [33, 56, "EMAIL"]]}
+{"id": "d123", "texto": "Ontem falei com Bárbara da Mata na agência e ele disse que o estorno de R$ 2.263,41 sai em 5 dias úteis. Já passou!", "entidades": [[16, 31, "NOME"]]}
+{"id": "d124", "texto": "Mudei para R. de Pacheco, 9 (CEP 34143-946), mandem o cartão novo para lá.", "entidades": [[11, 27, "ENDERECO"], [33, 42, "CEP"]]}
+{"id": "d125", "texto": "Dados para contestação:\n- cartão: 4893-8290-2877-1214\n- valor: R$ 7.417,60\n- data: 26/09/2026", "entidades": [[34, 53, "CARTAO"]]}
+{"id": "d126", "texto": "A conta conjunta é minha e da Diego Almeida. Quero incluir o Laís Campos como dependente.", "entidades": [[30, 43, "NOME"], [61, 72, "NOME"]]}
+{"id": "d127", "texto": "Mandei o Pix pra chave asantos@example.net mas era pra ser na 7620a4d4-ec52-6126-82c4-9b8c354178ca. Dá pra estornar?", "entidades": [[23, 42, "EMAIL"], [62, 98, "PIX_ALEATORIA"]]}
+{"id": "d128", "texto": "Sou MEI, CNPJ 30621547000175, e quero saber se posso usar a maquininha de vocês no meu comércio em da Paz da Praia.", "entidades": [[14, 28, "CNPJ"]]}
+{"id": "d129", "texto": "Faço aniversário dia 11/09/1970 e queria saber se tem algum benefício no cartão.", "entidades": [[21, 31, "DATA_NASCIMENTO"]]}
+{"id": "d130", "texto": "A fatura de R$ 175,87 com vencimento 05/11/2026 veio com código de barras 34191.79001 01043.510047 91020.150008 1 4276578047. Está certo?", "entidades": []}
+{"id": "d131", "texto": "Quanto rende R$ 8.119,18 no CDB de 110% do CDI por 12 meses? Vi no site do Caixa.", "entidades": []}
+{"id": "d132", "texto": "oii tudo bem? to sem acesso ao app, meu cpf 648.193.075-84 pode ver pra mim? obg, Julia Cirino", "entidades": [[44, 58, "CPF"], [82, 94, "NOME"]]}
+{"id": "d133", "texto": "Stephany Novais aqui. Troquei de número, o novo é (021) 96131-9430, favor atualizar.", "entidades": [[0, 15, "NOME"], [50, 66, "TELEFONE"]]}
+{"id": "d134", "texto": "Segue CPF 168 572 093 59 e email CSA@EXAMPLE.ORG para envio do informe de rendimentos.", "entidades": [[10, 24, "CPF"], [33, 48, "EMAIL"]]}
+{"id": "d135", "texto": "Ontem falei com Calebe Rios na agência e ele disse que o estorno de R$ 1.729,94 sai em 5 dias úteis. Já passou!", "entidades": [[16, 27, "NOME"]]}
+{"id": "d136", "texto": "Mudei para R. de Aragão, 686 (CEP 85274-015), mandem o cartão novo para lá.", "entidades": [[11, 28, "ENDERECO"], [34, 43, "CEP"]]}
+{"id": "d137", "texto": "Dados para contestação:\n- cartão: 4581-0349-4704-9589\n- valor: R$ 5.012,86\n- data: 14/10/2026", "entidades": [[34, 53, "CARTAO"]]}
+{"id": "d138", "texto": "A conta conjunta é minha e da Samuel Nascimento. Quero incluir o João Vitor da Paz como dependente.", "entidades": [[30, 47, "NOME"], [65, 82, "NOME"]]}
+{"id": "d139", "texto": "Mandei o Pix pra chave valentimsales@example.org mas era pra ser na f677bcd5-91a6-3f5c-a9f2-5478615c04b3. Dá pra estornar?", "entidades": [[23, 48, "EMAIL"], [68, 104, "PIX_ALEATORIA"]]}
+{"id": "d140", "texto": "Sou MEI, CNPJ 63024591000157, e quero saber se posso usar a maquininha de vocês no meu comércio em Alves das Flores.", "entidades": [[14, 28, "CNPJ"]]}
+{"id": "d141", "texto": "Faço aniversário dia 19/04/1986 e queria saber se tem algum benefício no cartão.", "entidades": [[21, 31, "DATA_NASCIMENTO"]]}
+{"id": "d142", "texto": "A fatura de R$ 38,02 com vencimento 09/11/2026 veio com código de barras 34191.79001 01043.510047 91020.150008 1 7257997716. Está certo?", "entidades": []}
+{"id": "d143", "texto": "Quanto rende R$ 6.894,53 no CDB de 110% do CDI por 12 meses? Vi no site do Nubank.", "entidades": []}
+{"id": "d144", "texto": "oii tudo bem? to sem acesso ao app, meu cpf 960.453.812-89 pode ver pra mim? obg, Levi Martins", "entidades": [[44, 58, "CPF"], [82, 94, "NOME"]]}
+{"id": "d145", "texto": "Isaque Moraes aqui. Troquei de número, o novo é (085) 93880-2892, favor atualizar.", "entidades": [[0, 13, "NOME"], [48, 64, "TELEFONE"]]}
+{"id": "d146", "texto": "Segue CPF 081 532 769 21 e email CDA-CRUZ@EXAMPLE.ORG para envio do informe de rendimentos.", "entidades": [[10, 24, "CPF"], [33, 53, "EMAIL"]]}
+{"id": "d147", "texto": "Ontem falei com Isabel Farias na agência e ele disse que o estorno de R$ 4.987,62 sai em 5 dias úteis. Já passou!", "entidades": [[16, 29, "NOME"]]}
+{"id": "d148", "texto": "Mudei para R. de Sales, 6 (CEP 28390-634), mandem o cartão novo para lá.", "entidades": [[11, 25, "ENDERECO"], [31, 40, "CEP"]]}
+{"id": "d149", "texto": "Dados para contestação:\n- cartão: 4712-7798-9754-6289\n- valor: R$ 6.162,22\n- data: 17/09/2026", "entidades": [[34, 53, "CARTAO"]]}
+{"id": "d150", "texto": "A conta conjunta é minha e da Emanuella Caldeira. Quero incluir o Ana Vitória Vasconcelos como dependente.", "entidades": [[30, 48, "NOME"], [66, 89, "NOME"]]}
+{"id": "d151", "texto": "Mandei o Pix pra chave bsampaio@example.net mas era pra ser na a990bd7c-999d-50ac-e419-7830663061dc. Dá pra estornar?", "entidades": [[23, 43, "EMAIL"], [63, 99, "PIX_ALEATORIA"]]}
+{"id": "d152", "texto": "Sou MEI, CNPJ 97201568000102, e quero saber se posso usar a maquininha de vocês no meu comércio em Barros das Pedras.", "entidades": [[14, 28, "CNPJ"]]}
+{"id": "d153", "texto": "Faço aniversário dia 24/11/1997 e queria saber se tem algum benefício no cartão.", "entidades": [[21, 31, "DATA_NASCIMENTO"]]}
+{"id": "d154", "texto": "A fatura de R$ 7.198,18 com vencimento 19/10/2026 veio com código de barras 34191.79001 01043.510047 91020.150008 1 1738285458. Está certo?", "entidades": []}
+{"id": "d155", "texto": "Quanto rende R$ 2.451,00 no CDB de 110% do CDI por 12 meses? Vi no site do Santander.", "entidades": []}
+{"id": "d156", "texto": "oii tudo bem? to sem acesso ao app, meu cpf 309.126.485-89 pode ver pra mim? obg, Olivia Novaes", "entidades": [[44, 58, "CPF"], [82, 95, "NOME"]]}
+{"id": "d157", "texto": "Maria Fernanda Vieira aqui. Troquei de número, o novo é (071) 93958-3856, favor atualizar.", "entidades": [[0, 21, "NOME"], [56, 72, "TELEFONE"]]}
+{"id": "d158", "texto": "Segue CPF 391 852 470 14 e email SMONTEIRO@EXAMPLE.COM para envio do informe de rendimentos.", "entidades": [[10, 24, "CPF"], [33, 54, "EMAIL"]]}
+{"id": "d159", "texto": "Ontem falei com Pedro Lucas Barros na agência e ele disse que o estorno de R$ 1.594,43 sai em 5 dias úteis. Já passou!", "entidades": [[16, 34, "NOME"]]}
