@@ -137,7 +137,12 @@ def sistema_presidio() -> Sistema:
     from presidio_analyzer import AnalyzerEngine, RecognizerRegistry
     from presidio_analyzer.nlp_engine import NlpEngineProvider
     from presidio_analyzer.predefined_recognizers import (
-        CreditCardRecognizer, DateRecognizer, EmailRecognizer, IbanRecognizer, PhoneRecognizer, SpacyRecognizer,
+        CreditCardRecognizer,
+        DateRecognizer,
+        EmailRecognizer,
+        IbanRecognizer,
+        PhoneRecognizer,
+        SpacyRecognizer,
     )
 
     nlp = NlpEngineProvider(nlp_configuration={

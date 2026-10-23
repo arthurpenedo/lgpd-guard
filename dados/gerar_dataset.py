@@ -95,7 +95,9 @@ def nome(minusculo: bool = False) -> str:
 def protocolo() -> str:
     while True:  # 11 dígitos que NÃO formam um CPF válido
         n = "".join(str(rnd.randint(0, 9)) for _ in range(11))
-        from lgpd_guard.validadores import cpf_valido  # import tardio: o gerador também roda sem instalar
+        from lgpd_guard.validadores import (
+            cpf_valido,  # import tardio: o gerador também roda sem instalar
+        )
 
         if not cpf_valido(n):
             return n
