@@ -31,6 +31,18 @@ def test_cnpj_e_luhn():
     assert not v.luhn_valido("4111 1111 1111 1112")
 
 
+def test_cnpj_repetido_e_luhn_fora_do_tamanho_sao_rejeitados():
+    assert not v.cnpj_valido("00.000.000/0000-00")  # passa na conta dos dígitos, mas não é emitido
+    assert not v.cnpj_valido("11.222.333/0001")
+    assert not v.luhn_valido("0000 0000 0000 0000")
+    assert not v.luhn_valido("4111 1111 1111")  # 12 dígitos: menos que o mínimo de um cartão
+
+
+@pytest.mark.parametrize("ddd,esperado", [("11", True), ("85", True), ("99", True), ("10", False), ("20", False), ("1a", False), ("", False)])
+def test_ddd_valido(ddd, esperado):
+    assert v.ddd_valido(ddd) is esperado
+
+
 # ---------------------------------------------------------------- detecção
 
 def test_detecta_os_documentos_brasileiros():
