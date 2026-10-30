@@ -183,3 +183,15 @@ def test_avaliar_tipo_errado_nao_conta_como_acerto_mas_conta_na_protecao():
     r = avaliar("falso", lambda t: [(0, 11, "TELEFONE")], exemplos)
     assert (r.geral.vp, r.geral.fn, r.geral.fp) == (0, 1, 1)
     assert (r.protecao.vp, r.protecao.fn, r.protecao.fp) == (1, 0, 0)
+
+
+def test_relatorio_html_escapa_texto_vindo_dos_dados():
+    from lgpd_guard import relatorio
+
+    perigoso = "<script>alert(1)</script>"
+    exemplos = [{"id": "a", "texto": "CPF 52998224725", "entidades": [[4, 15, "CPF"]]}]
+    av = avaliar(perigoso, lambda t: [(4, 15, "CPF")], exemplos).to_dict()
+    pagina = relatorio.gerar({"<b>conjunto</b>": {perigoso: av}}, exemplo=(perigoso, perigoso + " <CPF_1>"))
+    assert "<script>alert" not in pagina and "<b>conjunto" not in pagina
+    assert "&lt;script&gt;alert(1)&lt;/script&gt;" in pagina
+    assert "<mark>&lt;CPF_1&gt;</mark>" in pagina  # só o marcador legítimo vira destaque
