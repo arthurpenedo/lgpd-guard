@@ -146,3 +146,40 @@ def test_cli_benchmark_gera_relatorio(tmp_path):
     saida = tmp_path / "index.html"
     assert main(["benchmark", "--sem-presidio", "--html", str(saida), "--json", str(tmp_path / "r.json")]) == 0
     assert "Conjunto de desafio" in saida.read_text(encoding="utf-8")
+
+
+# ---------------------------------------------------------------- avaliação (placar)
+
+def test_placar_sem_nada_nao_divide_por_zero():
+    from lgpd_guard.avaliacao import Placar
+
+    p = Placar()
+    assert (p.precisao, p.cobertura, p.f1) == (0.0, 0.0, 0.0)
+    p = Placar(vp=3, fp=1, fn=3)
+    assert p.precisao == 0.75 and p.cobertura == 0.5
+    assert p.to_dict()["f1"] == 0.6
+
+
+def test_avaliar_conta_acertos_falsos_alarmes_e_texto_limpo():
+    exemplos = [
+        {"id": "a", "texto": "CPF 52998224725 ok", "entidades": [[4, 15, "CPF"]]},
+        {"id": "b", "texto": "nada aqui", "entidades": []},
+        {"id": "c", "texto": "fone 11999990000", "entidades": [[5, 16, "TELEFONE"]]},
+    ]
+    previsto = {
+        "CPF 52998224725 ok": [(4, 15, "CPF")],
+        "nada aqui": [(0, 4, "NOME")],  # falso alarme em texto limpo
+        "fone 11999990000": [],  # não detectado
+    }
+    r = avaliar("falso", lambda texto: previsto[texto], exemplos)
+    assert (r.geral.vp, r.geral.fp, r.geral.fn) == (1, 1, 1)
+    assert (r.textos_limpos, r.textos_limpos_marcados) == (1, 1)
+    assert {e["erro"] for e in r.erros} == {"não detectado", "falso alarme"}
+    assert r.to_dict()["falsos_alarmes_em_textos_limpos"] == "1/1"
+
+
+def test_avaliar_tipo_errado_nao_conta_como_acerto_mas_conta_na_protecao():
+    exemplos = [{"id": "a", "texto": "12345678901", "entidades": [[0, 11, "CPF"]]}]
+    r = avaliar("falso", lambda t: [(0, 11, "TELEFONE")], exemplos)
+    assert (r.geral.vp, r.geral.fn, r.geral.fp) == (0, 1, 1)
+    assert (r.protecao.vp, r.protecao.fn, r.protecao.fp) == (1, 0, 0)
