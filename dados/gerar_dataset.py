@@ -121,12 +121,12 @@ class Texto:
         self.entidades: list[list] = []
         self.tamanho = 0
 
-    def t(self, texto: str) -> "Texto":
+    def t(self, texto: str) -> Texto:
         self.partes.append(texto)
         self.tamanho += len(texto)
         return self
 
-    def p(self, tipo: str, valor_: str) -> "Texto":
+    def p(self, tipo: str, valor_: str) -> Texto:
         self.entidades.append([self.tamanho, self.tamanho + len(valor_), tipo])
         return self.t(valor_)
 
