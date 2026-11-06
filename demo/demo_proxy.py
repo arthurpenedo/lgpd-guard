@@ -30,10 +30,10 @@ OLLAMA = "http://localhost:11434/v1"
 SISTEMA = ("Você é a assistente virtual do Banco Aurora. Responda em português, em no máximo duas frases, "
            "e sempre cumprimente o cliente pelo nome.")
 TURNOS = [
-    "Olá, meu nome é Maria Helena Duarte, CPF 529.982.247-25. Meu cartão 4111 1111 1111 1111 foi clonado, "
-    "podem bloquear?",
-    "Obrigada! Mandem o cartão novo para a Rua das Flores, 123, CEP 01310-100. Qualquer coisa me liga no "
-    "(11) 98765-4321.",
+    ("Olá, meu nome é Maria Helena Duarte, CPF 529.982.247-25. Meu cartão 4111 1111 1111 1111 foi clonado, "
+     "podem bloquear?"),
+    ("Obrigada! Mandem o cartão novo para a Rua das Flores, 123, CEP 01310-100. Qualquer coisa me liga no "
+     "(11) 98765-4321."),
 ]
 DADOS_REAIS = ["Maria Helena", "529.982.247-25", "52998224725", "4111 1111 1111 1111", "Rua das Flores",
                "01310-100", "98765-4321"]
