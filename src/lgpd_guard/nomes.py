@@ -64,7 +64,7 @@ def _carregar_spacy():
 
         # o morphologizer fica ligado: a classe gramatical é usada para filtrar falsos nomes
         return spacy.load("pt_core_news_sm", disable=["lemmatizer", "parser"])
-    except Exception:  # spaCy ou o modelo ausentes: segue só com as regras
+    except (ImportError, OSError, ValueError):  # spaCy ou o modelo ausentes/incompatíveis: segue só com as regras
         return None
 
 
