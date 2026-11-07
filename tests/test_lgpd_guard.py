@@ -1,3 +1,5 @@
+import itertools
+
 import pytest
 
 from lgpd_guard import Cofre, Detector, Entidade, Pseudonimizador
@@ -83,7 +85,7 @@ def test_banco_e_cidade_nao_sao_pessoas():
 
 def test_sem_sobreposicao():
     entidades = det.detectar("Cliente: Maria Souza, CPF 52998224725, fone (11) 98765-4321")
-    for a, b in zip(entidades, entidades[1:]):
+    for a, b in itertools.pairwise(entidades):
         assert not a.sobrepoe(b)
 
 
