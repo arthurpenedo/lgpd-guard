@@ -13,3 +13,5 @@ build/
 data/raw/
 .DS_Store
 site/
+
+.coverage
